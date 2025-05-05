@@ -66,6 +66,22 @@ function FirstView() {
         <p className="smoke-07">
           <img src={smoke3Image} alt=""/>
         </p>
+        <p className="smoke-08">
+          <img src={smoke2Image} alt=""/>
+        </p>
+        <p className="smoke-09">
+          <img src={smoke1Image} alt=""/>
+        </p>
+        <p className="smoke-10">
+          <img src={smoke3Image} alt=""/>
+        </p>
+        <p className="smoke-11">
+          <img src={smoke2Image} alt=""/>
+        </p>
+        <p className="smoke-12">
+          <img src={smoke3Image} alt=""/>
+        </p>
+
       </div>
     </div>
   )
