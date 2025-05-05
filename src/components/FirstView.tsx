@@ -26,7 +26,7 @@ function FirstView() {
       </div>
 
       <div
-        className="absolute writing-vertical right-20 top-[30vh] z-10 text-[32px] text-white font-semibold tracking-[0.4em]">
+        className="absolute writing-vertical right-20 top-[30vh] z-10 text-[32px] text-white font-semibold tracking-[0.3em]">
         <div>
           湯けむりに
         </div>
@@ -39,7 +39,7 @@ function FirstView() {
       </div>
       <div className="absolute bottom-12 right-0 left-0 flex flex-col items-center z-10">
         <div className="flex flex-col items-center mb-2">
-          <span className="font-noto font-medium text-[10px] text-white tracking-widest">SCROLL</span>
+          <span className="font-sans font-medium text-[10px] text-white tracking-widest">SCROLL</span>
         </div>
         <div className="w-0.5 h-8 bg-white"></div>
       </div>
