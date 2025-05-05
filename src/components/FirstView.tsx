@@ -1,4 +1,4 @@
-import bacOnsenImage from '../assets/bac-onsen.jpg'
+import bacOnsenImage1 from '../assets/bac-onsen1.jpg'
 import bacOnsenImage2 from '../assets/bac-onsen2.jpg'
 import smoke1Image from '../assets/smoke1.svg'
 import smoke2Image from '../assets/smoke2.svg'
@@ -6,7 +6,7 @@ import smoke3Image from '../assets/smoke3.svg'
 import { useImageSlider } from '../hooks/useImageSlider';
 
 function FirstView() {
-  const images = [bacOnsenImage, bacOnsenImage2];
+  const images = [bacOnsenImage1, bacOnsenImage2];
   const currentIndex = useImageSlider(images);
 
   return (
@@ -18,8 +18,8 @@ function FirstView() {
             key={i}
             src={src}
             alt={`背景${i}`}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-2000 ${
-              i === currentIndex ? 'opacity-100' : 'opacity-0'
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-2000 ${
+              i === currentIndex ? 'opacity-100 scale-102' : 'opacity-0 scale-100'
             }`}
           />
         ))}
@@ -37,7 +37,6 @@ function FirstView() {
           ウェルケアで
         </div>
       </div>
-
       <div className="absolute bottom-12 right-0 left-0 flex flex-col items-center z-10">
         <div className="flex flex-col items-center mb-2">
           <span className="font-noto font-medium text-[10px] text-white tracking-widest">SCROLL</span>
@@ -59,6 +58,12 @@ function FirstView() {
           <img src={smoke2Image} alt=""/>
         </p>
         <p className="smoke-05">
+          <img src={smoke3Image} alt=""/>
+        </p>
+        <p className="smoke-06">
+          <img src={smoke3Image} alt=""/>
+        </p>
+        <p className="smoke-07">
           <img src={smoke3Image} alt=""/>
         </p>
       </div>

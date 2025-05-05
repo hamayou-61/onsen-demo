@@ -39,7 +39,6 @@ a:hover {
   opacity: 0.5;
 }
 
-/* Smoke Effect Base */
 .smoke-box {
   position: absolute;
   top: 0;
@@ -57,7 +56,6 @@ a:hover {
   animation-timing-function: linear;
 }
 
-/* Keyframes */
 @keyframes smoke-move-01 {
   0% {
     filter: blur(28px);
@@ -121,7 +119,6 @@ a:hover {
   }
 }
 
-/* Individual Smoke Positioning + Animation */
 .smoke-01 {
   left: 0;
   animation-name: smoke-move-01;
@@ -150,4 +147,14 @@ a:hover {
   right: 50%;
   animation-name: smoke-move-03;
   animation-duration: 10s;
+}
+.smoke-06 {
+  right: 10%;
+  animation-name: smoke-move-03;
+  animation-duration: 9s;
+}
+.smoke-07 {
+  left: 0;
+  animation-name: smoke-move-03;
+  animation-duration: 7s;
 }

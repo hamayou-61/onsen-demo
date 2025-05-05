@@ -12,7 +12,7 @@ export function useImageSlider<T>(items: T[]): number {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((i) => (i + 1) % items.length);
-    }, 7000);
+    }, 6000);
     return () => clearInterval(timer);
   }, [items.length]);
 
