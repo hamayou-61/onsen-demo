@@ -9,7 +9,7 @@ function Header() {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-[116px] px-12 flex justify-between items-center bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 h-[120px] px-12 flex justify-between items-center bg-transparent">
       <div>
         <img src={logo} alt="ウェルケア温泉" className="w-[260px] h-[64px]" />
       </div>
