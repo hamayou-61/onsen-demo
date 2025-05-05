@@ -26,14 +26,14 @@ function FirstView() {
       </div>
 
       <div
-        className="absolute writing-vertical right-20 top-[30vh] z-10 text-[32px] text-white font-semibold tracking-[0.2em]">
+        className="absolute writing-vertical right-20 top-[30vh] z-10 text-[32px] text-white font-semibold tracking-[0.4em]">
         <div>
           湯けむりに
         </div>
-        <div className="mt-[42px] mr-1">
+        <div className="mt-[60px] mr-3">
           癒しと笑顔
         </div>
-        <div className="mt-[84px] mr-1">
+        <div className="mt-[120px] mr-3">
           ウェルケアで
         </div>
       </div>

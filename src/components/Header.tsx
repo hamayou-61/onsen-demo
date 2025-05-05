@@ -1,8 +1,11 @@
+import logo from '../assets/logo.svg'
 function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-[108px] w-full flex justify-between items-center px-[50px]">
       <div className="flex items-center px-4">
-        <h1 className=" font-medium text-[32px] text-white tracking-[0.05em]">ウェルケア温泉デモ</h1>
+        <h1 className=" font-medium text-[32px] text-white tracking-[0.05em]">
+          <img src={logo} alt="ウェルケア温泉" className="w-[260px] h-[64px]" />
+          </h1>
       </div>
       <nav className="flex items-center py-2">
         <div className="flex items-center gap-4">
