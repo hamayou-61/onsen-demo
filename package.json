@@ -3,10 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hamayou-61.github.io/onsen-demo",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && cp -r dist docs",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
