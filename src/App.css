@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B0B682;
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+  line-height: 1.5;
+  height: 100%;
+}

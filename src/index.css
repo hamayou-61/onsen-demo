@@ -1,0 +1,153 @@
+:root {
+  font-family: 'Zen Old Mincho', 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #213547;
+  background-color: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  min-width: 100%;
+  min-height: 100vh;
+  font-size: 1.4em;
+}
+
+a {
+  transition: all 0.15s;
+}
+a:hover {
+  opacity: 0.5;
+}
+
+/* Smoke Effect Base */
+.smoke-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.smoke-box p {
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Keyframes */
+@keyframes smoke-move-01 {
+  0% {
+    filter: blur(28px);
+    transform: scale(0.8) rotateY(0deg);
+    opacity: 0;
+    bottom: -100px;
+  }
+  6% { opacity: 0.5; }
+  33% {
+    transform: scale(1.3, 1.1) rotateY(30deg);
+    opacity: 0.7;
+  }
+  66% { transform: scale(1, 0.8) rotateY(4deg); }
+  100% {
+    filter: blur(35px);
+    transform: scale(1.5, 1.3) rotateY(50deg);
+    opacity: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes smoke-move-02 {
+  0% {
+    filter: blur(21px);
+    transform: scale(0.8) rotateY(0deg);
+    opacity: 0;
+    bottom: -200px;
+  }
+  6% { opacity: 0.6; }
+  33% {
+    transform: scale(0.9, 1.1) rotateY(30deg);
+    opacity: 0.8;
+  }
+  66% { transform: scale(1, 0.8) rotateY(4deg); }
+  100% {
+    filter: blur(29px);
+    transform: scale(1.5, 1.3) rotateY(50deg);
+    opacity: 0;
+    bottom: 20%;
+  }
+}
+
+@keyframes smoke-move-03 {
+  0% {
+    filter: blur(26px);
+    transform: scale(1) rotateY(0deg);
+    opacity: 0;
+    bottom: -40px;
+  }
+  6% { opacity: 0.3; }
+  33% {
+    transform: scale(0.9, 1) rotateY(30deg);
+    opacity: 0.6;
+  }
+  66% { transform: scale(1, 0.9) rotateY(4deg); }
+  100% {
+    filter: blur(34px);
+    transform: scale(1.3, 1.2) rotateY(50deg);
+    opacity: 0;
+    bottom: 60%;
+  }
+}
+
+/* Individual Smoke Positioning + Animation */
+.smoke-01 {
+  left: 0;
+  animation-name: smoke-move-01;
+  animation-duration: 20s;
+}
+
+.smoke-02 {
+  left: 30%;
+  animation-name: smoke-move-01;
+  animation-duration: 15s;
+}
+
+.smoke-03 {
+  right: 30%;
+  animation-name: smoke-move-01;
+  animation-duration: 10s;
+}
+
+.smoke-04 {
+  right: -40px;
+  animation-name: smoke-move-01;
+  animation-duration: 15s;
+}
+
+.smoke-05 {
+  right: 50%;
+  animation-name: smoke-move-03;
+  animation-duration: 10s;
+}
