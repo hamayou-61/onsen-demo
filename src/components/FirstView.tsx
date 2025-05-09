@@ -3,6 +3,8 @@ import bacOnsenImage2 from '../assets/bac-onsen2.jpg'
 import smoke1Image from '../assets/smoke1.svg'
 import smoke2Image from '../assets/smoke2.svg'
 import smoke3Image from '../assets/smoke3.svg'
+import catchTextImage from '../assets/catch.svg'
+
 import { useImageSlider } from '../hooks/useImageSlider';
 
 function FirstView() {
@@ -26,16 +28,8 @@ function FirstView() {
       </div>
 
       <div
-        className="absolute writing-vertical right-20 top-[30vh] z-10 text-[32px] text-white font-semibold tracking-[0.3em]">
-        <div>
-          湯けむりに
-        </div>
-        <div className="mt-[60px] mr-3">
-          癒しと笑顔
-        </div>
-        <div className="mt-[120px] mr-3">
-          ウェルケアで
-        </div>
+        className="absolute writing-vertical right-22 top-[25vh] w-[170px] z-10 text-[32px] text-white font-semibold tracking-[0.3em]">
+        <img src={catchTextImage} alt="湯けむりに癒しと笑顔ウェルケアで" className="w-100" />
       </div>
       <div className="absolute bottom-12 right-0 left-0 flex flex-col items-center z-10">
         <div className="flex flex-col items-center mb-2">
